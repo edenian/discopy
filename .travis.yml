@@ -7,4 +7,4 @@ before_install:
 install:
   - pip install pytket
 script:
-  - python import-tket.py
+  - python tket-example.py
