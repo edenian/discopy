@@ -11,7 +11,7 @@ install:
   - pip install ".[test]" . # install package + test dependencies
   -
 script:
-  - python import-tket.py
+  - coverage run -m python import-tket.py
 after_success:
   - coverage report -m discopy/*.py discopy/*/*.py
   - coverage xml discopy/*.py discopy/*/*.py
